@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
+.nav{
+    width: 550px;
+    height: 410px;
+    background-color: hsl(0, 0%, 100%);
+    border-block-end-style: initial;
+    padding: 2rem;
+    border-radius: 1rem;
+    border-end-end-radius: 10rem;
+}
+.div{
+    display: flex;
+    gap: 2rem;
+}
+.h5{
+    letter-spacing: 3px;
+    color: hsl(0, 1%, 44%);
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+.input{
+    width: 6rem;
+    height: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top: -15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.input:hover{
+    outline-color: hsl(259, 100%, 65%);
+
+}
+#ee{
+    color: hsl(0, 100%, 67%);
+    display: flex;
+    font-size: xx-small;
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.div1{
+    margin-top: 35px;
+    display: flex;
+}
+hr{
+    color:hsl(0, 1%, 44%) ;
+    width: 460px;
+    margin-left: 5px;
+    height: 0;
+}
+.btn{
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    margin-top: -26px;
+    margin-right: 12px;
+    background-color: hsl(259, 100%, 65%) ;
+    border-style: none;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: black;
+}
+.div3{
+    display: flex;
+    font-size: 80px;
+}
+#p{
+    color: hsl(259, 100%, 65%);
+    font-weight: bold;
+    font-style: italic;
+}
+.p1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+#d3{
+    margin-top: -110px ;
+}
+#d4{
+    margin-top: -200px;
+}
+#d5{
+    margin-top: -210px;
+}
+@media screen and (max-width:650px) {
+    .input{
+        width: 3rem;
+        height: 1rem;
+    }
+    
+}
