@@ -2,63 +2,82 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/Logo.png">
   
   <title>Frontend Mentor | Age calculator app</title>
   <link rel="stylesheet" href="index.css">
 
-  <!-- <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style> -->
 </head>
 <body style="background-color: hsl(0, 0%, 94%);">
-  <center>
 
-<nav class="nav">
+  <main class="calculator">
+    <div class="calculator_container">
+      <form class="calculator_form" id="ageForm">
+       <div class="calculator_form_inputs">
+         <div class="calculator_form_input">
+           <label class="calculator_form_input_heading">DAY</label>
+            <input
+             class="calculator_form_input_box"
+             type="text"
+             id="birth_day"
+             placeholder="DD"
+             required
+           />
+           <small id="birth_day_error" class="calculator_form_input_error"></small>
+         </div>
 
-  <div class="div">
-    <div>
-    <h5 class="h5">DAY</h5>
-    <input class="input" type="number" id="day" placeholder="DD">
-    <label for="number"></label>
-    <small id="ee" class="ed" ></small>
-  </div>
-  <div>
-    <h5 class="h5">MONTH</h5>
-    <input class="input" type="number" id="month" placeholder="MM">
-    <label for="number"></label>
-    <small id="ee" class="em"></small>
-  </div>
-  <div>
-    <h5 class="h5">YEAR</h5>
-    <input class="input" type="number" id="year" placeholder="YYYY">
-    <label for="number"></label>
-    <small id="ee" class="ey"></small>
-  </div>
-  </div>
+         <div class="calculator_form_input">
+           <label class="calculator_form_input_heading">MONTH</label>
+           <input
+             class="calculator_form_input_box"
+             type="text"
+             id="birth_month"
+             placeholder="MM"
+             required
+           />
+           <small id="birth_month_error" class="calculator_form_input_error"></small>
+         </div>
 
-  <div class="div1">
-    <hr>
-    <button class="btn"> <img src="assets/images/icon-arrow.svg" alt=""></button>
-  </div>
+         <div class="calculator_form_input">
+           <label class="calculator_form_input_heading">YEAR</label>
+            <input
+             class="calculator_form_input_box"
+             type="text"
+             id="birth_year"
+             placeholder="YYYY"
+             required
+           />
+           <small id="birth_year_error" class="calculator_form_input_error"></small>
+         </div>
+       </div>
 
-  <div class="div2">
-    <div class="div3" id="d3"><p class="years" id="p">--</p><p class="p1">years</p></div>
-    <div class="div3" id="d4"><p class="months" id="p">--</p><p class="p1">months</p></div>
-    <div class="div3" id="d5"><p class="days" id="p">--</p><p class="p1">days</p></div>
-  </div>
-</nav>
+       <div class="calculator_form_button_container">
+         <hr class="calculator_form_button_line" />
+         <button class="calculator_form_button">
+           <img src="assets/images/icon-arrow.svg" alt="" />
+         </button>
+       </div>
+     </form>
+
+     <div class="result_container">
+       <div class="result_item_container">
+         <p class="result_item" id="age_year">- -</p>
+         <p class="result_item_label">years</p>
+       </div>
+       <div class="result_item_container">
+         <p class="result_item" id="age_month">- -</p>
+         <p class="result_item_label">months</p>
+       </div>
+       <div class="result_item_container">
+         <p class="result_item" id="age_day">- -</p>
+         <p class="result_item_label">days</p>
+       </div>
+     </div>
+   </div>
+ </main>
   
-</center>
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Ifeoluwa</a>.
-  </div> -->
-
   <script src="index.js"></script>
 </body>
 </html>
